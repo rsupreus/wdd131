@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Trebuchet', sans-serif;
 }
 
 body {
@@ -31,6 +31,8 @@ header {
     padding: 15px;
     font-size: 1.5rem;
     font-weight: bold;
+    background-color: #1F3B2D;
+    width: 100%;
 }
 
 
