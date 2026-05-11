@@ -1,10 +1,8 @@
-/* styles.css */
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Overlock", sans-serif;
 }
 
 body {
@@ -18,12 +16,10 @@ body {
 
 header {
     display: block;
-    /* padding: 20px; */
     background-color: #1F3B2D;
     color: #FAFAFA;
     text-align: center;
     font-size: 1.25rem;
-    margin: 20px;
 }
 
 #course-title {
@@ -170,7 +166,7 @@ figcaption {
     margin: 0;
 }
 
-.resources li {
+.card-content li {
     margin-bottom: 15px;
 }
 
