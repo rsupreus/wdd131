@@ -38,6 +38,8 @@ header h1 {
     border: none;
     color: white;
     cursor: pointer;
+    width: 44px;
+    height: 44px;
 }
 
 /* HAMBURGER ICON */
@@ -84,7 +86,6 @@ nav a {
 nav a:hover {
     color: #DCE8D8;
     background-color: #3F6B52;
-    padding: 4px 10px;
     border-radius: 4px;
     text-decoration: underline;
 }
