@@ -1,0 +1,146 @@
+/* temples.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Overlock", sans-serif;
+}
+
+body {
+    background-color: #E8EFE6;
+    padding: 8px;
+    color: #2B2B2B;
+}
+
+
+/* HEADER */
+
+header {
+    display: flex;
+    align-items: center;
+    background-color: #1F3B2D;
+    color: #FAFAFA;
+    padding: 1rem 2rem;
+}
+
+header h1 {
+    font-size: 2rem;
+    white-space: nowrap;
+}
+
+/* HAMBURGER */
+
+#menu {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* HAMBURGER ICON */
+
+#menu::before {
+    content: "☰";
+}
+
+/* X CLOSE BUTTON */
+
+#menu.open::before {
+    content: "✖";
+}
+
+.navigation {
+    display: none;
+    /* width: 100%; */
+}
+
+.navigation.open {
+    display: block;
+}
+
+
+/* NAVIGATION */
+
+nav {
+    /* width: 100%; */
+    padding: 10px 0;
+    display: flex;
+    margin-top: 1rem;
+}
+
+nav ul {
+    /* display: flex;
+    gap: 1.5rem; */
+    list-style: none;
+}
+
+nav a {
+    /* display: block; */
+    color: #FAFAFA;
+    text-decoration: none;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav a:hover {
+    color: #DCE8D8;
+    background-color: #3F6B52;
+    padding: 4px 10px;
+    border-radius: 4px;
+    text-decoration: underline;
+}
+
+/* MAIN SECTION */
+
+main {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 1rem;
+    gap: 20px;
+}
+
+main h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.temple-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+figure {
+    text-align: center;
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+figcaption {
+    margin-top: .5rem;
+    color: #4b0d74;
+    font-size: .9rem;
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: #1F3B2D;
+    color: #FAFAFA;
+    padding: 20px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+footer p:last-child {
+    color: gold;
+    margin-top: 5px;
+}
