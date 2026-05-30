@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - RoseDana Supreus</title>
+    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals - RoseDana Supreus - Country Page">
+    <meta name="author" content="RoseDana Supreus">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/place.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Overlock&display=swap" rel="stylesheet">
+</head>
+<body>
+     <header>
+        <h1>Haiti</h1>
+    </header>
+
+    <main>
+
+        <section class="hero">
+            <picture>
+                <source
+                    srcset="images/haiti1.webp"
+                    media="(min-width: 768px)">
+
+                <img
+                    src="images/haiti2.webp"
+                    alt="Lemurs in Madagascar">
+            </picture>
+        </section>
+
+            <section class="data-card">
+                <h2>Data</h2>
+
+                <div class="data-content">
+                    <p><strong>Area:</strong> 743 sq km</p>
+                    <p><strong>Population:</strong> 87,000</p>
+                    <p><strong>Capital:</strong> Anse-à-Galets</p>
+                    <p><strong>Languages:</strong> Haitian Creole, French</p>
+                    <p><strong>Currency:</strong> Haitian Gourde (HTG)</p>
+                    <p><strong>Time Zone:</strong> UTC-5</p>
+                    <p><strong>Calling Code:</strong> +509</p>
+                    <p><strong>Internet TLD:</strong> .ht</p>
+                </div>
+            </section>
+
+            <section class="weather-card">
+                <h2 class="weather-title">Weather</h2>
+
+                <img
+                    src="images/partly-cloudy.svg"
+                    alt="Partly cloudy weather icon"
+                    class="weather-icon">
+
+                <p><strong>Temperature:</strong> 29°C</p>
+                <p><strong>Conditions:</strong> Mostly Sunny</p>
+                <p><strong>Wind:</strong> 18 km/h</p>
+                <p><strong>Wind Chill:</strong> N/A</p>
+            </section>
+
+    </main>
+
+
+    <footer class="footer">
+        <p>© <span id="currentyear"></span>  🌄 RoseDana Supreus 🌄 Utah </p>
+        <p id="lastModified"></p>
+    </footer>
+    
+</body>
+</html>

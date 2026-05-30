@@ -1,0 +1,39 @@
+@media (min-width: 768px) {
+
+    .hero {
+        position: relative;
+    }
+
+    .hero img {
+        width: 100%;
+        display: block;
+    }
+
+    .data-card {
+        position: absolute;
+        top: 2rem;
+        left: 2rem;
+        width: 220px;
+    }
+
+    .weather-card {
+        position: absolute;
+        bottom: 2rem;
+        right: 2rem;
+        width: 220px;
+    }
+
+    .weather-icon {
+        display: none;
+    }
+
+    .weather-emoji {
+        display: inline;
+        font-size: 1.5rem;
+    }
+
+     .weather-heading::after {
+        content: " ⛅";
+        font-size: 1.5rem;
+    }
+}
