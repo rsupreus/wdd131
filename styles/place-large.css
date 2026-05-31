@@ -1,5 +1,9 @@
 @media (min-width: 768px) {
 
+    .weather-icon {
+        display: none !important;
+    }
+
     .hero {
         position: relative;
     }
@@ -9,31 +13,41 @@
         display: block;
     }
 
-    .data-card {
+   .data-card {
         position: absolute;
-        top: 2rem;
-        left: 2rem;
-        width: 220px;
+        top: 75px;
+        left: 20px;
+        width: 450px;
     }
 
     .weather-card {
         position: absolute;
-        bottom: 2rem;
-        right: 2rem;
-        width: 220px;
+        bottom: 40px;
+        right: 20px;
+        width: 300px;
     }
 
-    .weather-icon {
-        display: none;
-    }
+    .data-card h2,
+    .weather-card h2 {
+        width: 80%;
+        margin-left: -10px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        padding: 12px 15px;
+        text-align: left;
+        font-size: 2rem;
+        background-color: var(--secondary-color);
+        color: white;
+}
 
     .weather-emoji {
         display: inline;
         font-size: 1.5rem;
     }
 
-     .weather-heading::after {
+     .weather-title::after {
         content: " ⛅";
         font-size: 1.5rem;
     }
 }
+
