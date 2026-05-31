@@ -25,28 +25,101 @@ footer {
     color: var(--light-color);
 }
 
-.data-card,
-.weather-card {
+header {
+    background-color: var(--primary-color);
+    color: white;
     text-align: center;
-    padding: 1rem;
-    background: white;
+    padding: 1.5rem;
 }
+
+header h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+
+/* FOOTER */
+
+footer {
+    /* background-color: #1F3B2D; */
+    color: #FAFAFA;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p:last-child {
+    color: gold;
+    margin-top: 5px;
+}
+
+/* Class selectors */
 
 .data-card {
     position: absolute;
-    top: 70px;
-    left: 25px;
-    background: rgba(255,255,255,.85);
-    padding: 1rem;
+    top: 75px;
+    left: 20px;
+    min-width: 300px;
+    background-color: rgba(255,255,255,.85);
+    backdrop-filter: blur(2px);
 }
+
 .data-card h2,
 .weather-card h2 {
+    width: 80%;
+    margin-left: -10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 12px 15px;
+    text-align: left;
+    font-size: 2rem;
     background-color: var(--secondary-color);
+    color: white;
+}
+
+.data-content,
+.weather-content {
+    padding: 1rem;
+}
+
+.data-content p,
+.weather-content p {
+    display: grid;
+    grid-template-columns: 100px 150px;
+    column-gap: 15px;
+    margin: .3rem 0;
+}
+
+.data-content strong,
+.weather-content strong {
+    text-align: right;
+    justify-self: end;
+}
+
+.data-content span,
+.weather-content span {
+    text-align: left;
+    justify-self: start;
+}
+
+.weather-card {
+    position: absolute;
+    bottom: 40px;
+    right: 20px;
+    min-width: 240px;
+    background-color: rgba(255,255,255,.85);
+    backdrop-filter: blur(2px);
+}
+
+
+.hero {
+    position: relative;
+    margin-top: 0;
 }
 
 .hero img {
     width: 100%;
-    height: auto;
+    height: 650px;
+    object-fit: cover;
     display: block;
 }
 
@@ -66,17 +139,3 @@ footer {
     font-size: 1.5rem;
 }
 
-/* FOOTER */
-
-footer {
-    /* background-color: #1F3B2D; */
-    color: #FAFAFA;
-    padding: 20px;
-    margin-top: 30px;
-    text-align: center;
-}
-
-footer p:last-child {
-    color: gold;
-    margin-top: 5px;
-}
