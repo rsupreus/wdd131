@@ -1,11 +1,11 @@
 :root {
-    --primary-color: #1F3B2D; 
-    --secondary-color: #2E8B57;
+    --primary-color: #0047AB;      /* Haiti Blue */
+    --secondary-color: #D21034;    /* Haiti Red */
+    --accent-color: #F4C542;       /* Gold accent */
     --light-color: #FFFFFF;
     --dark-color: #222222;
-    --card-bg: rgba(255, 255, 255, 0.85);
+    --card-bg: rgba(255, 255, 255, 0.90);
 }
-
 * {
     margin: 0;
     padding: 0;
@@ -69,7 +69,7 @@ footer {
 /* FOOTER */
 
 footer {
-    background-color: #1F3B2D;
+    /* background-color: #1F3B2D; */
     color: #FAFAFA;
     padding: 20px;
     margin-top: 30px;
