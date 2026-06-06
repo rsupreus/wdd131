@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: white;
+}
+
+main {
+    max-width: 450px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 2rem;
+}
+
+h1 {
+    margin-bottom: 2rem;
+}
+
+img {
+    display: block;
+    width: 400px;
+    height: 600px;
+    object-fit: cover;
+    margin: 1rem auto;
+    opacity: 0;
+    animation: fadeIn 1.5s forwards;
+}
+
+/* Fade from black effect */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        filter: brightness(0%);
+    }
+
+    100% {
+        opacity: 1;
+        filter: brightness(100%);
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+}
