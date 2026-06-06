@@ -15,7 +15,7 @@ const temples = [
     area: 74792,
     imageUrl:
     "https://churchofjesuschristtemples.org/assets/img/temples/manti-utah-temple/manti-utah-temple-45813.jpg"
-  }
+  },
     {
     templeName: "Payson Utah",
     location: "Payson, Utah, United States",
