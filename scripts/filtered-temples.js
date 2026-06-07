@@ -6,7 +6,7 @@ const temples = [
     dedicated: "2005, August, 7",
     area: 11500,
     imageUrl:
-    "https://churchofjesuschristtemples.org/assets/img/temples/aba-nigeria-temple/aba-nigeria-temple-5087.jpg"
+    "images/aba-nigeria-temple-5087.jpg"
   },
   {
     templeName: "Manti Utah",
@@ -14,7 +14,7 @@ const temples = [
     dedicated: "1888, May, 21",
     area: 74792,
     imageUrl:
-    "https://churchofjesuschristtemples.org/assets/img/temples/manti-utah-temple/manti-utah-temple-45813.jpg"
+    "images/manti-utah-temple-45813.jpg"
   },
     {
     templeName: "Payson Utah",
@@ -22,7 +22,7 @@ const temples = [
     dedicated: "2015, June, 7",
     area: 96630,
     imageUrl:
-    "https://churchofjesuschristtemples.org/assets/img/temples/payson-utah-temple/payson-utah-temple-11086.jpg"
+    "images/payson-utah-temple-11086.jpg"
 },
   {
     templeName: "Yigo Guam",
@@ -30,7 +30,7 @@ const temples = [
     dedicated: "2020, May, 2",
     area: 6861,
     imageUrl:
-    "https://churchofjesuschristtemples.org/assets/img/temples/yigo-guam-temple/yigo-guam-temple-26495.jpg"
+    "images/yigo-guam-temple-26495.jpg"
 },
   {
     templeName: "Washington D.C.",
@@ -38,7 +38,7 @@ const temples = [
     dedicated: "1974, November, 19",
     area: 156558,
     imageUrl:
-    "https://churchofjesuschristtemples.org/assets/img/temples/washington-d.c.-temple/washington-d.c.-temple-26454.jpg"
+    "images/washington-d.c.-temple-26454.jpg"
 },
   {
     templeName: "Lima Perú",
@@ -46,7 +46,7 @@ const temples = [
     dedicated: "1986, January, 10",
     area: 9600,
     imageUrl:
-    "https://churchofjesuschristtemples.org/assets/img/temples/lima-peru-temple/lima-peru-temple-12721.jpg"
+    "images/lima-peru-temple-12721 (1).jpg"
 },
   {
     templeName: "Mexico City Mexico",
@@ -54,7 +54,7 @@ const temples = [
     dedicated: "1983, December, 2",
     area: 116642,
     imageUrl:
-    "https://churchofjesuschristtemples.org/assets/img/temples/mexico-city-mexico-temple/mexico-city-mexico-temple-4058.jpg"
+    "images/mexico-city-mexico-temple-4058.jpg"
 },
   {
     templeName: "Las Vegas Nevada",
@@ -62,7 +62,7 @@ const temples = [
     dedicated: "1989, December, 16",
     area: 80350,
     imageUrl:
-    "https://churchofjesuschristtemples.org/assets/img/temples/las-vegas-nevada-temple/las-vegas-nevada-temple-69889.jpg"
+    "images/las-vegas-nevada-temple-69889.jpg"
   },
   {
     templeName: "Port-Au-Prince Haiti",
@@ -70,7 +70,7 @@ const temples = [
     dedicated: "2019, September, 1",
     area: 10396,
     imageUrl:
-    "https://churchofjesuschristtemples.org/assets/img/temples/port-au-prince-haiti-temple/port-au-prince-haiti-temple-51484.jpg"
+    "images/port-au-prince-haiti-temple-51484.jpg"
   },
   {
     templeName: "Fort Lauderdale Florida",
@@ -78,7 +78,7 @@ const temples = [
     dedicated: "2014, May, 4",
     area: 30500,
     imageUrl:
-    "https://churchofjesuschristtemples.org/assets/img/temples/fort-lauderdale-florida-temple/fort-lauderdale-florida-temple-55220.jpg"
+    "images/fort-lauderdale-florida-temple-55220.jpg"
   },
   {
     templeName: "Dallas Texas",
@@ -86,7 +86,7 @@ const temples = [
     dedicated: "1989, March, 5",
     area: 44207,
     imageUrl:
-    "https://churchofjesuschristtemples.org/assets/img/temples/dallas-texas-temple/dallas-texas-temple-67245.jpg"
+    "images/dallas-texas-temple-67245.jpg"
   }
 ];
 
@@ -224,6 +224,9 @@ new Date().getFullYear();
 
 
 // Display last modified date
+
+document.getElementById("lastModified").textContent =
+    `Last Modified: ${document.lastModified}`;
 
 const menuButton = document.querySelector("#menu");
 const navigation = document.querySelector(".navigation");
