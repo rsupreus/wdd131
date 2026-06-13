@@ -147,19 +147,3 @@ footer p:first-child {
     margin-bottom: .5rem;
 }
 
-
-
-/* FOOTER */
-
-footer {
-    background-color: #3c003c;
-    color: #FAFAFA;
-    padding: 20px;
-    margin-top: 30px;
-    text-align: center;
-}
-
-footer p:last-child {
-    color: gold;
-    margin-top: 5px;
-}
