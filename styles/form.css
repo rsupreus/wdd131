@@ -90,10 +90,16 @@ textarea {
     height: 20px;
 }
 
-.checkbox-group label {
-    display: block;
-    font-weight: normal;
+.checkbox-group div {
+    display: flex;
+    align-items: center;
     margin-bottom: .5rem;
+}
+
+.checkbox-group label {
+    display: inline;
+    font-weight: normal;
+    margin: 0 0 0 .5rem;
 }
 
 .checkbox-group input {
@@ -113,8 +119,9 @@ textarea {
     font-weight: normal;
 }
 
-button {
-    width: 100%;
+button,
+input[type="submit"] {
+    min-width: 100%;
     padding: .75rem;
     font-size: 1.5rem;
     font-weight: bold;
@@ -123,7 +130,8 @@ button {
     cursor: pointer;
 }
 
-button:hover {
+button:hover,
+input[type="submit"]:hover {
     background: #e5e5e5;
 }
 

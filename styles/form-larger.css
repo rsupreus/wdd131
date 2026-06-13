@@ -1,0 +1,21 @@
+@media screen and (min-width: 640px) {
+
+    .review-container {
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+    form {
+        padding: 2rem;
+    }
+
+    .rating-container {
+        justify-content: space-around;
+    }
+
+    input[type="submit"] {
+        max-width: 300px;
+        display: block;
+        margin: 0 auto;
+    }
+}
