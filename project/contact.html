@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Providential Fortitude</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Open+Sans:wght@400;500&family=Cormorant+Garamond:wght@500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="/styles/project.css">
+<link rel="stylesheet" href="/styles/project-large.css">
+<script src="/scripts/project.js" defer></script>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">
+        <h1>Providential Fortitude</h1>
+    </div>
+
+    <button id="menu" aria-label="Menu">☰</button>
+
+    <nav class="navigation">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<main>
+
+<h2>Schedule a Consultation</h2>
+
+<form id="contactForm">
+
+    <label>
+        Name
+        <input type="text" id="name" required>
+    </label>
+
+    <label>
+        Email
+        <input type="email" required>
+    </label>
+
+    <label>
+        Service Interest
+        <select id="service">
+            <option>Personal Training</option>
+            <option>Nutrition Coaching</option>
+            <option>Reflexology</option>
+        </select>
+    </label>
+
+    <label>
+        Message
+        <textarea required></textarea>
+    </label>
+
+    <input type="submit" value="Submit">
+
+</form>
+
+<div id="confirmation"></div>
+
+</main>
+
+<footer>
+    <p>© <span id="year"></span> Providential Fortitude</p>
+</footer>
+
+</body>
+</html>

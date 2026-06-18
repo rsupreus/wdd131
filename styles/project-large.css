@@ -1,0 +1,101 @@
+@media screen and (min-width: 768px) {
+
+     header {
+        position: relative;
+        padding: 1rem 2rem;
+        text-align: center;
+    }
+
+    header h1 {
+        margin: 0;
+        text-align: center;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .navigation {
+        position: absolute;
+        right: 2rem;
+        top: 50%;
+        transform: translateY(-50%);
+
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+    .navigation a {
+        color: var(--white);
+        text-decoration: none;
+    }
+}
+    
+    /* HERO */
+
+    .hero {
+        display: grid;
+        grid-template-columns: 1fr 1.2fr;
+        gap: 2rem;
+        align-items: center;
+        padding: 3rem 0;
+    }
+
+    .hero-image img {
+        width: 100%;
+        height: 450px;
+        object-fit: cover;
+    }
+
+    /* SERVICES */
+
+    .service-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+    }
+
+    
+
+    /* FAITH SECTION */
+
+    .faith-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        align-items: center;
+        margin: 4rem 0;
+    }
+
+    .faith-image img {
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+    }
+
+    /* CTA */
+
+    .cta {
+    text-align: center;
+    padding: 3rem 2rem;
+    }
+
+    .cta-button {
+        display: inline-block;
+        margin-top: 1rem;
+    }
+
+    .cta-button,
+    button,
+    .submit-btn {
+        background-color: var(--gold);
+        color: var(--dark);
+        border: none;
+    }
+
+    .cta-button:hover,
+    button:hover,
+    .submit-btn:hover {
+        background-color: #b89844;
+    }
