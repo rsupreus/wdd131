@@ -4,7 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Providential Fortitude</title>
-
+<meta name="description" content="WDD 131 – Dynamic Web Fundamentals - RoseDana Supreus - Providential Fortitude Final Project">
+<meta name="author" content="RoseDana Supreus">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
@@ -12,7 +13,7 @@
 
 <link rel="stylesheet" href="styles/project.css">
 <link rel="stylesheet" href="styles/project-large.css">
-<script src="scripts/project.js" defer></script>
+<script src="scripts/contact.js" defer></script>
 </head>
 
 <body>
@@ -33,39 +34,110 @@
 
 <main>
 
-<h2>Schedule a Consultation</h2>
+    <h2>Schedule a Consultation</h2>
 
-<form id="contactForm">
+    <section class="contact-card mission-card">
 
-    <label>
-        Name
-        <input type="text" id="name" required>
-    </label>
+        <h3>Our Mission</h3>
 
-    <label>
-        Email
-        <input type="email" required>
-    </label>
+        <p>
+            We believe true wellness is achieved through the
+            integration of physical fitness, proper nutrition,
+            holistic health practices, and a strong foundation
+            in faith.
+        </p>
 
-    <label>
-        Service Interest
-        <select id="service">
-            <option>Personal Training</option>
-            <option>Nutrition Coaching</option>
-            <option>Reflexology</option>
-        </select>
-    </label>
+        <blockquote>
+            "I can do all things through Christ who strengthens me."
+        </blockquote>
 
-    <label>
-        Message
-        <textarea required></textarea>
-    </label>
+        <cite>Philippians 4:13</cite>
 
-    <input type="submit" value="Submit">
+    </section>
 
-</form>
 
-<div id="confirmation"></div>
+    <div class="contact-layout">
+
+            <section class="contact-card">
+                <h3>Let's Connect</h3>
+
+                <p>
+                    Whether you're seeking fitness coaching,
+                    nutrition guidance, or holistic wellness
+                    support, we'd love to hear from you.
+                </p>
+
+                <p>
+                    Every wellness journey begins with a conversation.
+                    During your consultation, we'll discuss your goals,
+                    challenges, and develop a personalized plan that
+                    aligns with your physical, mental, and spiritual well-being.
+                </p>
+
+                <aside class="info">
+                    <p>📧 info@providentialfortitude.com</p>
+                    <p>📞 (555) 123-4567</p>
+                    <p>📍 Vineyard, Utah</p>
+                </aside>
+            </section>
+
+           <section class="contact-card">
+                <h3>What to Expect</h3>
+
+                <p>
+                    Your initial consultation is designed to help us
+                    understand your unique needs and create a wellness
+                    strategy that supports your goals.
+                </p>
+
+                <ul>
+                    <li>Personalized wellness assessment</li>
+                    <li>Faith-centered guidance</li>
+                    <li>Goal setting and action planning</li>
+                </ul>
+
+                <aside class="info">
+                <p>
+                    <strong>Consultation Length:</strong> 30–60 Minutes
+                </p>
+
+                <p>
+                    <strong>Format:</strong> Virtual or In-Person
+                </p>
+
+                <p>
+                    <strong>Response Time:</strong> Within 24–48 Hours
+                </p>
+                </aside>
+            </section>
+
+        </aside>
+
+    </div>
+
+    <section class="contact-form-container">
+
+            <form method="get" action="thankyou.html">
+
+                <label for="name">Name</label>
+            <input type="text" id="name">
+
+            <label for="email">Email</label>
+            <input type="email" id="email">
+
+            <label for="interest">Service Interest</label>
+            <select id="interest">
+                ...
+            </select>
+
+            <label for="message">Message</label>
+            <textarea id="message"></textarea>
+
+            <input type="submit" value="Submit">
+
+            </form>
+
+        </section>
 
 </main>
 
