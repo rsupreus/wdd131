@@ -1,11 +1,3 @@
-// Hamburger Menu
-
-const menuButton = document.querySelector("#menu");
-const navigation = document.querySelector(".navigation");
-
-menuButton.addEventListener("click", () => {
-    navigation.classList.toggle("open");
-});
 
 
 const services = [
@@ -18,7 +10,8 @@ const services = [
             "Body composition tracking",
             "Faith-based encouragement"
         ],
-        videoId: "nwBsdOXIGyI",
+        video: "https://www.youtube.com/watch?v=nwBsdOXIGyI",
+        thumbnail: "images/fitness-video.jpg",
         tiers: [
             { name: "Starter", price: "$49 / Session" },
             { name: "Growth", price: "$179 / Month" },
@@ -35,7 +28,8 @@ const services = [
             "Healthy lifestyle coaching",
             "Supplement recommendations"
         ],
-        videoId: "3o2jkh7FVpw",
+        video: "https://www.youtube.com/watch?v=3o2jkh7FVpw",
+        thumbnail: "images/nutrition-video.jpg",
         tiers: [
             { name: "Starter", price: "$59 Consultation" },
             { name: "Wellness Plan", price: "$199 Package" },
@@ -52,7 +46,8 @@ const services = [
             "Spiritual wellness support",
             "Personal growth strategies"
         ],
-        videoId: "IInPxe9bJeg",
+        video: "https://www.youtube.com/watch?v=IInPxe9bJeg",
+        thumbnail: "images/holistic-video.jpg",
         tiers: [
             { name: "Relax", price: "$45 Session" },
             { name: "Renew", price: "$149 Package" },
@@ -101,13 +96,20 @@ function displayServices() {
             </ul>
 
             <div class="service-video">
-                <a href="https://www.youtube.com/watch?v=${service.videoId}"
-                target="_blank">
-
-                    <img src="https://img.youtube.com/vi/${service.videoId}/maxresdefault.jpg">
-
-                    <div class="play-button">▶</div>
-
+                <a href="${service.video}" target="_blank">
+                    <img
+                        src="${service.thumbnail}"
+                        alt="${service.name} video"
+                        class="video-thumbnail"
+                        loading="lazy"
+                        width="400"
+                        height="300"
+                    >
+                    <span class="play-button">
+                        <svg viewBox="0 0 24 24" width="32" height="32">
+                            <path fill="white" d="M8 5v14l11-7z"/>
+                        </svg>
+                    </span>
                 </a>
             </div>
 
